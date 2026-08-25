@@ -15,6 +15,19 @@ export default tseslint.config(
       'apps/*/ios/',
       'apps/*/android/',
       '.yarn/',
+      '**/*.config.js',
     ],
+  },
+  {
+    languageOptions: {
+      globals: {
+        __DEV__: 'readonly',
+        console: 'readonly',
+        require: 'readonly',
+        module: 'readonly',
+        __dirname: 'readonly',
+        process: 'readonly',
+      },
+    },
   },
 );
