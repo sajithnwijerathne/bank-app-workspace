@@ -1,0 +1,30 @@
+{
+  "name": "bank-app-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "packageManager": "yarn@4.18.0",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "madge": "^8.0.0",
+    "nx": "23.1.1",
+    "prettier": "^3.9.6",
+    "syncpack": "^15.3.3",
+    "typescript": "5.6.3",
+    "typescript-eslint": "^8.67.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "syncpack": "syncpack format && syncpack list-mismatches",
+    "prepare": "husky"
+  }
+}

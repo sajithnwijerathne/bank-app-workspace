@@ -1,0 +1,15 @@
+node_modules
+.nx
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+dist
+build
+coverage
+.DS_Store
+apps/*/ios/Pods
+apps/*/ios/build
+apps/*/android/app/build
+apps/*/android/.gradle
