@@ -1,9 +1,8 @@
 {
   "name": "@bank-app/ui",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "private": true,
-  "dependencies": {},
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
