@@ -11,6 +11,8 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import {store, persistor} from './src/store/redux';
 import BottomSheet, {BottomSheetView} from '@gorhom/bottom-sheet';
+import {LoginForm} from './src/components/LoginForm';
+import {setupSSLPinning} from './src/security/pinning';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -21,6 +23,9 @@ function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Bank App Home</Text>
+
+      <LoginForm />
+
       <Button
         title="Open Bottom Sheet"
         onPress={() => bottomSheetRef.current?.expand()}
@@ -56,6 +61,10 @@ function MainTabs() {
 }
 
 export default function App() {
+  React.useEffect(() => {
+    setupSSLPinning();
+  }, []);
+
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

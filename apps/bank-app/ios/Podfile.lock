@@ -1388,6 +1388,30 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - react-native-ssl-public-key-pinning (1.2.6):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-bridging
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTNetwork
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - TrustKit
+    - Yoga
   - React-NativeModulesApple (0.87.0):
     - hermes-engine
     - React-bridging
@@ -1769,6 +1793,28 @@ PODS:
     - ReactNativeDependencies
     - RNWorklets (>= 0.8.0)
     - Yoga
+  - RNKeychain (10.0.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-bridging
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - RNReanimated (4.6.0):
     - hermes-engine
     - RCTRequired
@@ -2033,6 +2079,7 @@ PODS:
     - Yoga
   - SocketRocket (0.7.1):
     - ReactNativeDependencies
+  - TrustKit (3.0.7)
   - Yoga (0.0.0):
     - React-Core-prebuilt
 
@@ -2090,6 +2137,7 @@ DEPENDENCIES:
   - React-microtasksnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - React-mutationobservernativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/mutationobserver`)
   - react-native-safe-area-context (from `../../../node_modules/react-native-safe-area-context`)
+  - react-native-ssl-public-key-pinning (from `../../../node_modules/react-native-ssl-public-key-pinning`)
   - React-NativeModulesApple (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-networking (from `../../../node_modules/react-native/ReactCommon/react/networking`)
   - React-oscompat (from `../../../node_modules/react-native/ReactCommon/oscompat`)
@@ -2127,6 +2175,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../../../node_modules/react-native/ReactCommon`)
   - ReactNativeDependencies (from `../../../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec`)
   - RNGestureHandler (from `../../../node_modules/react-native-gesture-handler`)
+  - RNKeychain (from `../../../node_modules/react-native-keychain`)
   - RNReanimated (from `../../../node_modules/react-native-reanimated`)
   - RNScreens (from `../../../node_modules/react-native-screens`)
   - RNSVG (from `../../../node_modules/react-native-svg`)
@@ -2137,6 +2186,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - MMKVCore
+    - TrustKit
 
 EXTERNAL SOURCES:
   AsyncStorage:
@@ -2244,6 +2294,8 @@ EXTERNAL SOURCES:
     :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/mutationobserver"
   react-native-safe-area-context:
     :path: "../../../node_modules/react-native-safe-area-context"
+  react-native-ssl-public-key-pinning:
+    :path: "../../../node_modules/react-native-ssl-public-key-pinning"
   React-NativeModulesApple:
     :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-networking:
@@ -2318,6 +2370,8 @@ EXTERNAL SOURCES:
     :podspec: "../../../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec"
   RNGestureHandler:
     :path: "../../../node_modules/react-native-gesture-handler"
+  RNKeychain:
+    :path: "../../../node_modules/react-native-keychain"
   RNReanimated:
     :path: "../../../node_modules/react-native-reanimated"
   RNScreens:
@@ -2385,6 +2439,7 @@ SPEC CHECKSUMS:
   React-microtasksnativemodule: e0095be041c79483d1d3fded0c682c31d351730f
   React-mutationobservernativemodule: edfe5f0e9548231a767c3a1db6fc52926da0002a
   react-native-safe-area-context: 352ca3a1d913db1068dcd86669bf60d59608d6eb
+  react-native-ssl-public-key-pinning: 4eb6e0b8b0579ea00a2d5c1ab695f15800fc4cfe
   React-NativeModulesApple: 9f0679a0f98eecd53150ebb6cba645f73a92434a
   React-networking: cabb0d227644bddc24f5e7dba0f5c4a8ea9b8723
   React-oscompat: 72573ceb65b6c6c6bc34e51e0df8f44c91081a6d
@@ -2422,11 +2477,13 @@ SPEC CHECKSUMS:
   ReactCommon: 31d05b76329c8b3c9ef37fff8212f830925a2535
   ReactNativeDependencies: ec5530432d8191b38e278117d498aaff05ea9d6f
   RNGestureHandler: da48be88e9cc63a20f25d6b715e6acc93992c2dd
+  RNKeychain: c21223f99385f30e3353355f1a130c150f23c96d
   RNReanimated: 8449d89f873d974d30c44a83bf90b0a2718ffbc4
   RNScreens: cdfdbb0050779d8a879038774be539b584204730
   RNSVG: df7b2c0679ac7b9a668af6c6b40e2c6cb4df88f5
   RNWorklets: 38d688c1e121cebc53dafb703740cc6812cbd5c8
   SocketRocket: d57b1af80c029e12a75cd9b218287c67381e4593
+  TrustKit: 1050f3ce0595f8ed775f1237b7f590e3a4f93e91
   Yoga: 58b502c52b14ad3c4468805d461fc37d275c2a42
 
 PODFILE CHECKSUM: 5e4bf4f63ad452fdbaf3f64d103d5ba1b272879a
