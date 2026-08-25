@@ -7,6 +7,9 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Button} from '@bank-app/ui';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import {store, persistor} from './src/store/redux';
 import BottomSheet, {BottomSheetView} from '@gorhom/bottom-sheet';
 
 const Stack = createNativeStackNavigator();
@@ -54,19 +57,23 @@ function MainTabs() {
 
 export default function App() {
   return (
-    <GestureHandlerRootView style={{flex: 1}}>
-      <SafeAreaProvider>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen
-              name="Main"
-              component={MainTabs}
-              options={{headerShown: false}}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
-      </SafeAreaProvider>
-    </GestureHandlerRootView>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <GestureHandlerRootView style={{flex: 1}}>
+          <SafeAreaProvider>
+            <NavigationContainer>
+              <Stack.Navigator>
+                <Stack.Screen
+                  name="Main"
+                  component={MainTabs}
+                  options={{headerShown: false}}
+                />
+              </Stack.Navigator>
+            </NavigationContainer>
+          </SafeAreaProvider>
+        </GestureHandlerRootView>
+      </PersistGate>
+    </Provider>
   );
 }
 
