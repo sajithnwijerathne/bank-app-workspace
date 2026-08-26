@@ -25,6 +25,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "syncpack": "syncpack format && syncpack list-mismatches",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "npx patch-package"
   }
 }
