@@ -5112,7 +5112,7 @@ __metadata:
     react-native-nitro-modules: "npm:^0.37.0"
     react-native-reanimated: "npm:3.16.1"
     react-native-safe-area-context: "npm:^5.9.1"
-    react-native-screens: "npm:5.0.0-alpha.2"
+    react-native-screens: "npm:4.10.0"
     react-native-ssl-public-key-pinning: "npm:^1.2.6"
     react-native-svg: "npm:^15.15.5"
     react-native-svg-transformer: "npm:^1.5.3"
@@ -10797,16 +10797,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-screens@npm:5.0.0-alpha.2":
-  version: 5.0.0-alpha.2
-  resolution: "react-native-screens@npm:5.0.0-alpha.2"
+"react-native-screens@npm:4.10.0":
+  version: 4.10.0
+  resolution: "react-native-screens@npm:4.10.0"
   dependencies:
     react-freeze: "npm:^1.0.0"
     warn-once: "npm:^0.1.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/7aaef758d0a8c8d016e5e063b618da30b2eac3a7ca2c9b0901cb58a5731f4c13de040f68ecb66b337bdecde9f4d422b3e29db4a9f8da2224a09fb336d87d8fed
+  checksum: 10c0/09d1f55431b85e556ef7b5efd776ac5e85303e47d9138f910cb8c25ff3804effc43185f84e8842bcae2219e8fee12366b3725f955f638c109387efb82e0260f3
   languageName: node
   linkType: hard
 
